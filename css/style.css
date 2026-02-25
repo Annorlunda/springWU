@@ -1,0 +1,26 @@
+:root{
+    --my_blue:#1e235c
+}
+body{
+    margin: 0px;
+    background-color: green;
+}
+#container{
+    background-color:var(--my_blue);
+    height: 200vh;
+}
+/*p{ KOlla om vi vill ha den färgen som textfärg
+    color:#fffffc;
+}*/
+
+/*Font för header + fancy saker, använd medium (2:a)*/
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.ibm-plex-serif-medium {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
