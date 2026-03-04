@@ -3,10 +3,10 @@
 }
 body{
     margin: 0px;
-    background-color: green;
+    /*background-color: green;*/
 }
 #container{
-    background-color:var(--my_blue);
+    /*background-color:var(--my_blue);*/
     height: 200vh;
 }
 /*p{ KOlla om vi vill ha den färgen som textfärg
