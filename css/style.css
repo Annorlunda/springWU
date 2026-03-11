@@ -6,10 +6,17 @@ body{
     /*background-color: green;*/
 }
 #container{
-    /*background-color:var(--my_blue);*/
+    background-color:yellow;
     height: 200vh;
+    display:grid;
+    grid-template-columns: 15vw 1fr;
+    grid-template-rows: 15vh 1fr 1fr 20vh;
+    grid-template-areas: "hd hd"
+        "nv mn"
+        "none mn"
+        "ft ft";
 }
-/*p{ KOlla om vi vill ha den färgen som textfärg
+/*p{ Kolla om vi vill ha den färgen som textfärg
     color:#fffffc;
 }*/
 
@@ -23,4 +30,51 @@ body{
   font-family: "IBM Plex Serif", serif;
   font-weight: 500;
   font-style: normal;
+}
+
+header{
+    background-color: red;
+    grid-area: hd;
+}
+
+nav{
+    background-color: orange;
+    grid-area: nv;
+}
+
+main{
+    background-color: green;
+    grid-area: mn;
+}
+
+footer{
+    background-color: blue;
+    grid-area: ft;
+}
+
+/*Mobile*/
+@media screen and (max-width:480px){
+    #container{
+    height: 150vh;
+    display:flex;
+    flex-direction: column;
+    }
+    nav{
+        display:none;
+    }
+    header{
+        height: 10vh;
+    }
+    main{
+        height: 125vh;
+    }
+    footer{
+        height: 15vh;
+    }
+}
+
+/*Desktop - om behöver ändra saker*/
+@media screen and (min-width: ??){
+    
+
 }
