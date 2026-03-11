@@ -15,7 +15,33 @@ body{
         "nv mn"
         "none mn"
         "ft ft";
+header{
+    background-color: red;
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    #hdBLogo{
+        margin-left: 10px;
+    }
 }
+
+nav{
+    background-color: orange;
+    grid-area: nv;
+}
+
+main{
+    background-color: green;
+    grid-area: mn;
+}
+
+footer{
+    background-color: blue;
+    grid-area: ft;
+}}
 /*p{ Kolla om vi vill ha den färgen som textfärg
     color:#fffffc;
 }*/
@@ -32,24 +58,8 @@ body{
   font-style: normal;
 }
 
-header{
-    background-color: red;
-    grid-area: hd;
-}
-
-nav{
-    background-color: orange;
-    grid-area: nv;
-}
-
-main{
-    background-color: green;
-    grid-area: mn;
-}
-
-footer{
-    background-color: blue;
-    grid-area: ft;
+#navClose, #hdBLogo, #hdNav{
+    height:10vh;
 }
 
 /*Mobile*/
@@ -74,7 +84,9 @@ footer{
 }
 
 /*Desktop - om behöver ändra saker*/
-@media screen and (min-width: ??){
-    
+@media screen and (min-width:481px){
+    #navClose, #hdNav{
+        display:none;
+    }
 
 }
