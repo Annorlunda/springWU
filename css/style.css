@@ -31,8 +31,17 @@ header{
 nav{
     background-color: orange;
     grid-area: nv;
-}
+    /*display:grid;*/
 
+}
+#navCloseButton{
+    /*justify-self: end;*/
+    height: 10vh;
+    position:absolute;
+    right:0;
+    background-color: transparent;
+    border-style: none;
+}
 main{
     background-color: green;
     grid-area: mn;
@@ -70,7 +79,14 @@ footer{
     flex-direction: column;
     }
     nav{
-        display:none;
+        position: fixed;
+        width: 92vw;
+        height: 96vh;
+        left: -100vw;
+        transition: left 0.5s;
+    }
+    nav.show{
+        left: 0;
     }
     header{
         height: 10vh;
@@ -85,7 +101,7 @@ footer{
 
 /*Desktop - om behöver ändra saker*/
 @media screen and (min-width:481px){
-    #navClose, #hdNav{
+    #hdNavButton, #navCloseButton{
         display:none;
     }
 
