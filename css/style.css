@@ -1,36 +1,46 @@
 :root{
-    --my_blue:#1e235c
+    --my_blue:#1e235c;
+    --main_blue:#9caeff;
+    --box_shadow: 5px 5px 8px #002699/*#0030cc*/; /*ha skugga på texten i heqader också*/
+    --main_white: #d6e0ff/*#e5ebff*/;
 }
 body{
     margin: 0px;
+    background-color: transparent;
     /*background-color: green;*/
 }
 #container{
-    background-color:yellow;
+    background-color:var(--main_white) /*#ccd5ff*/;
     height: 200vh;
     display:grid;
     grid-template-columns: 15vw 1fr;
     grid-template-rows: 15vh 1fr 1fr 20vh;
     grid-template-areas: "hd hd"
         "nv mn"
-        "none mn"
+        "nv mn"
         "ft ft";
 header{
-    background-color: red;
+    box-shadow: var(--box_shadow);
+    background-color: var(--main_blue);
     grid-area: hd;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
+    
     #hdBLogo{
         margin-left: 10px;
     }
 }
-
+a{
+    color: black;
+}
 nav{
-    background-color: orange;
+    /*background-color: #9caeff/*#ccd5ff#e5eaff*/
+    box-shadow: var(--box_shadow);
+    background-color: var(--main_blue);
     grid-area: nv;
+    
     /*display:grid;*/
 
 }
@@ -43,13 +53,17 @@ nav{
     border-style: none;
 }
 main{
-    background-color: green;
+    /*background-color: #9caeff/*#8099ff#e5eaff*/
     grid-area: mn;
+    box-shadow: var(--box_shadow);
+    background-color: var(--main_white);
+    
 }
 
 footer{
-    background-color: blue;
+    background-color: var(--main_blue);
     grid-area: ft;
+
 }}
 /*p{ Kolla om vi vill ha den färgen som textfärg
     color:#fffffc;
@@ -69,6 +83,7 @@ footer{
 
 #navClose, #hdBLogo, #hdNav{
     height:10vh;
+    box-shadow: var(--box_shadow);
 }
 
 /*Mobile*/
@@ -84,6 +99,7 @@ footer{
         height: 96vh;
         left: -100vw;
         transition: left 0.5s;
+        
     }
     nav.show{
         left: 0;
@@ -103,6 +119,15 @@ footer{
 @media screen and (min-width:481px){
     #hdNavButton, #navCloseButton{
         display:none;
+    }
+    header{
+        z-index: 3;
+    }
+    nav{
+        z-index: 2;
+    }
+    main{
+        z-index: 1;
     }
 
 }
