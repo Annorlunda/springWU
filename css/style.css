@@ -3,6 +3,7 @@
     --main_blue:#9caeff;
     --box_shadow: 5px 5px 8px #002699/*#0030cc*/; /*ha skugga på texten i heqader också*/
     --main_white: #d6e0ff/*#e5ebff*/;
+    --logo_border_radius: 4px;
 }
 body{
     margin: 0px;
@@ -81,10 +82,22 @@ footer{
   font-style: normal;
 }
 
-#navClose, #hdBLogo, #hdNav{
-    height:10vh;
+#hdBLogo, #navClose, #hdNav{
     box-shadow: var(--box_shadow);
+    border-radius: var(--logo_border_radius);
 }
+
+#hdBLogo{
+    height: 8vh;
+    
+}
+#navClose{
+    height: 7vh;
+} 
+#hdNav{
+    height: 8.5vh;
+}
+
 
 /*Mobile*/
 @media screen and (max-width:480px){
@@ -112,6 +125,11 @@ footer{
     }
     footer{
         height: 15vh;
+    }
+    #hdNavButton{
+        background-color: transparent;
+        border-style: none;
+        border-radius: 100px;
     }
 }
 
