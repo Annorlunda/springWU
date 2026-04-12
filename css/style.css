@@ -1,9 +1,11 @@
 :root{
     --my_blue:#1e235c;
     --main_blue:#9caeff;
-    --box_shadow: 5px 5px 8px #002699/*#0030cc*/; /*ha skugga på texten i heqader också*/
+    --box_shadow_blue: #002699;
+    --box_shadow: 5px 5px 8px var(--box_shadow_blue)/*#0030cc*/; /*ha skugga på texten i heqader också*/
     --main_white: #d6e0ff/*#e5ebff*/;
     --logo_border_radius: 4px;
+    --text_shadow:7px 5px 10px var(--main_white);
 }
 body{
     margin: 0px;
@@ -28,13 +30,16 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    h1{
+        text-shadow: var(--text_shadow);
+    }
     #hdBLogo{
         margin-left: 10px;
     }
 }
 a{
     color: black;
+    text-shadow: var(--text_shadow);
 }
 nav{
     /*background-color: #9caeff/*#ccd5ff#e5eaff*/
@@ -70,34 +75,26 @@ footer{
     color:#fffffc;
 }*/
 
-/*Font för header + fancy saker, använd medium (2:a)*/
-.ibm-plex-serif-regular {
-  font-family: "IBM Plex Serif", serif;
+/*Font för header + fancy saker*/
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
 }
-.ibm-plex-serif-medium {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 500;
-  font-style: normal;
-}
+
 
 #hdBLogo, #navClose, #hdNav{
     box-shadow: var(--box_shadow);
     border-radius: var(--logo_border_radius);
 }
 
-#hdBLogo{
+#hdBLogo, #navClose{
     height: 8vh;
     
 }
-#navClose{
-    height: 7vh;
-} 
 #hdNav{
     height: 8.5vh;
 }
-
 
 /*Mobile*/
 @media screen and (max-width:480px){
@@ -112,13 +109,18 @@ footer{
         height: 96vh;
         left: -100vw;
         transition: left 0.5s;
-        
+        a{
+            font-size: 2.5em;
+        }        
     }
     nav.show{
         left: 0;
     }
     header{
         height: 10vh;
+        h1{
+            font-size: 2.5em;
+        }
     }
     main{
         height: 125vh;
@@ -140,9 +142,15 @@ footer{
     }
     header{
         z-index: 3;
+        h1{
+            font-size: 3.5em;
+        }
     }
     nav{
         z-index: 2;
+        a{
+            font-size: 1.5em;
+        }
     }
     main{
         z-index: 1;
