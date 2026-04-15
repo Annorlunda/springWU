@@ -69,16 +69,8 @@ main{
 footer{
     background-color: var(--main_blue);
     grid-area: ft;
-    h4{
-        margin: 0.5em;
-    }
-    p{
-        margin: 0.3em;
-    }
-    ul{
-        margin: 0.3em;
-    }
-}}
+}
+}
 /*p{ Kolla om vi vill ha den färgen som textfärg
     color:#fffffc;
 }*/
@@ -162,6 +154,36 @@ footer{
     }
     main{
         z-index: 1;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+    
+    
+    #footBild{
+        flex-grow: 0.1;
+    }
+    
+    #footText{
+        flex-grow: 0.1;
+    }
+    
+    
+    h4{
+        margin: 0.5em;
+        font-size: 2em;
+        text-shadow: var(--text_shadow);
+    }
+    p{
+        margin: 1em 0.5em 0.15em 0.5em;
+        font-size: 1.2em;
+        text-shadow: var(--text_shadow);
+        font-weight: 600;
+    }
+    ul{
+        margin: 0.3em;
+        text-shadow: var(--text_shadow);
+    }
     }
 
 }
