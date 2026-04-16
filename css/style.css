@@ -131,6 +131,13 @@ footer{
     }
     main{
         height: 125vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        img{
+            height: 30vh;
+        }
     }
     footer{
         height: 50vh;
