@@ -6,6 +6,7 @@
     --main_white: #d6e0ff/*#e5ebff*/;
     --logo_border_radius: 4px;
     --text_shadow:7px 5px 10px var(--main_white);
+    --box_border_radius: 10px;
 }
 body{
     margin: 0px;
@@ -134,9 +135,20 @@ footer{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         img{
+            height: 25vh;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        section{
             height: 30vh;
+            background-color: #1e235c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: var(--box_border_radius);
+            box-shadow: var(--box_shadow);
         }
     }
     footer{
