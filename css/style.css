@@ -46,7 +46,6 @@ a{
     background-color: var(--main_white);
 }
 nav{
-    /*background-color: #9caeff/*#ccd5ff#e5eaff*/
     box-shadow: var(--box_shadow);
     background-color: var(--main_blue);
     grid-area: nv;
@@ -68,7 +67,7 @@ main{
     box-shadow: var(--box_shadow);
     background-color: var(--main_white);
     .catSec{
-            background-color: var(--my_blue);
+            background-color: black;
             justify-content: center;
             align-items: center;
             border-radius: var(--box_border_radius);
