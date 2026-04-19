@@ -42,6 +42,9 @@ a{
     color: black;
     text-shadow: var(--text_shadow);
 }
+.currentA{
+    background-color: var(--main_white);
+}
 nav{
     /*background-color: #9caeff/*#ccd5ff#e5eaff*/
     box-shadow: var(--box_shadow);
@@ -71,6 +74,10 @@ main{
             border-radius: var(--box_border_radius);
             box-shadow: var(--box_shadow);
         }
+    .catSecImg{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     
 }
 
@@ -143,13 +150,11 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-content:space-around ;
+        align-content:space-around;
         .catSecImg{
             height: 25vh;
-            margin-left: 10px;
-            margin-right: 10px;
         }
-        #catSec8{
+        #catSec8, #catSec9, #catSec10, #catSec11{
             display: none;
         }
         .catSec{
@@ -184,7 +189,7 @@ footer{
     }
 }
 
-/*Desktop - om behöver ändra saker*/
+/*Desktop*/
 @media screen and (min-width:481px){
     #hdNavButton, #navCloseButton{
         display:none;
@@ -205,12 +210,17 @@ footer{
         z-index: 1;
         display: flex;
         flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-around;
         .catSecImg{
             height: 45vh;
         }
         .catSec{
             height: 50vh;
             display: flex;
+        }
+        #catSec5{
+            order: 12;
         }
     }
     footer{
