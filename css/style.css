@@ -13,6 +13,7 @@ body{
     background-color: transparent;
     /*background-color: green;*/
 }
+
 #container{
     background-color:var(--main_white) /*#ccd5ff*/;
     height: 200vh;
@@ -153,9 +154,13 @@ footer{
         .catSecImg{
             height: 25vh;
         }
-        #catSec8, #catSec9, #catSec10, #catSec11{
+        #catSec8, #catSec9, #catSec10, #catSec11, #catDiv1, #catDiv2, #catDiv3, #catDiv4{
             display: none;
         }
+        #catDiv7{
+            order: -1;
+        }
+
         .catSec{
             height: 30vh;
             display: flex;
@@ -210,7 +215,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         align-content: space-evenly;
-        justify-content: space-around;
+        justify-content: space-evenly;
         .catSecImg{
             height: 45vh;
         }
