@@ -146,6 +146,10 @@ footer{
     }
     main{
         height: 125vh;
+        
+        
+    }
+    #catMn, #otMn{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -160,10 +164,41 @@ footer{
         #catDiv7{
             order: -1;
         }
-
         .catSec{
             height: 30vh;
             display: flex;
+        }
+    }
+    #hisMn{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 35vh 35vh 1fr 35vh ;
+        grid-template-areas: 
+        "pic1 text1"
+        "pic2 pic2"
+        "text2 text2"
+        "pic3 text3"
+        ;
+        .hisDivImg{
+            height: 35vh;
+        }
+        #hisDiv1{
+            grid-area: pic1;
+        }
+        #hisSec1{
+            grid-area: text1;
+        }
+        #hisDiv2{
+            grid-area: pic2;
+        }
+        #hisSec2{
+            grid-area: text2;
+        }
+        #hisDiv3{
+            grid-area: pic3;
+        }
+        #hisSec3{
+            grid-area: text3;
         }
     }
     footer{
