@@ -146,8 +146,6 @@ footer{
     }
     main{
         height: 125vh;
-        
-        
     }
     #catMn, #otMn{
         display: flex;
@@ -179,9 +177,23 @@ footer{
         "text2 text2"
         "pic3 text3"
         ;
+        justify-items: center;
+        align-items: center;
+        /* row-gap: 2px; */
         .hisDivImg{
-            height: 35vh;
+            height: 30vh;
+            margin-left: 10px;
+            margin-right: 10px;
         }
+        .hisDiv{
+            height: 32vh;
+            display: flex;
+        }
+        /* .hisSec{
+            background-color: var(--main_blue);
+            border-radius: var(--box_border_radius);
+            box-shadow: var(--box_shadow);
+        } */
         #hisDiv1{
             grid-area: pic1;
         }
