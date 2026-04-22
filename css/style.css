@@ -32,14 +32,11 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    h1{
-        text-shadow: var(--text_shadow);
-    }
     #hdBLogo{
         margin-left: 10px;
     }
 }
-a{
+a, h1, h2, h3, h4, p{
     color: black;
     text-shadow: var(--text_shadow);
 }
@@ -175,8 +172,7 @@ footer{
         "pic1 text1"
         "pic2 pic2"
         "text2 text2"
-        "pic3 text3"
-        ;
+        "pic3 text3";
         justify-items: center;
         align-items: center;
         /* row-gap: 2px; */
@@ -189,28 +185,39 @@ footer{
             height: 32vh;
             display: flex;
         }
-        /* .hisSec{
+        .hisSec{
             background-color: var(--main_blue);
             border-radius: var(--box_border_radius);
             box-shadow: var(--box_shadow);
-        } */
+        }
+        h2, p{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
         #hisDiv1{
             grid-area: pic1;
         }
         #hisSec1{
             grid-area: text1;
+            width: 42vw;
+            height: 30vh;
         }
         #hisDiv2{
             grid-area: pic2;
         }
         #hisSec2{
             grid-area: text2;
+            width: 90vw;
+            height: 18vh;
         }
         #hisDiv3{
             grid-area: pic3;
         }
         #hisSec3{
             grid-area: text3;
+            width: 47vw;
+            height: 30vh;
+            justify-self: start;
         }
     }
     footer{
