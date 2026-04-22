@@ -77,6 +77,15 @@ main{
     }
     
 }
+#hisMn{
+        display: grid;
+        
+        .hisSec{
+            background-color: var(--main_blue);
+            border-radius: var(--box_border_radius);
+            box-shadow: var(--box_shadow);
+        }
+    }
 
 footer{
     background-color: var(--main_blue);
@@ -100,13 +109,10 @@ footer{
   /* font-weight: 900; */
   font-style: normal;
 }
-
-
 #hdBLogo, #navClose, #hdNav{
     box-shadow: var(--box_shadow);
     border-radius: var(--logo_border_radius);
 }
-
 #hdBLogo, #navClose{
     height: 8vh;
     
@@ -185,44 +191,44 @@ footer{
             height: 32vh;
             display: flex;
         }
-        .hisSec{
-            background-color: var(--main_blue);
-            border-radius: var(--box_border_radius);
-            box-shadow: var(--box_shadow);
-        }
         h2, p{
             margin-left: 5px;
             margin-right: 5px;
+        }
+        #hisSec1{
+            width: 42vw;
+            height: 30vh;
+        }
+        #hisSec2{
+            width: 90vw;
+            height: 18vh;
+        }
+        #hisSec3{
+            width: 47vw;
+            height: 30vh;
+            justify-self: start;
         }
         #hisDiv1{
             grid-area: pic1;
         }
         #hisSec1{
             grid-area: text1;
-            width: 42vw;
-            height: 30vh;
         }
         #hisDiv2{
             grid-area: pic2;
         }
         #hisSec2{
             grid-area: text2;
-            width: 90vw;
-            height: 18vh;
         }
         #hisDiv3{
             grid-area: pic3;
         }
         #hisSec3{
             grid-area: text3;
-            width: 47vw;
-            height: 30vh;
-            justify-self: start;
         }
     }
     footer{
         height: 50vh;
-        
         h4{
         margin: 0.3em 0em 0em 0.3em;
         font-size: 1.4em;
@@ -252,7 +258,8 @@ footer{
     #hdNavButton, #navCloseButton{
         display:none;
     }
-    header{
+    #container{
+        header{
         z-index: 3;
         h1{
             font-size: 3.5em;
@@ -266,10 +273,6 @@ footer{
     }
     main{
         z-index: 1;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-evenly;
-        justify-content: space-evenly;
         .catSecImg{
             height: 45vh;
         }
@@ -279,6 +282,48 @@ footer{
         }
         #catSec5{
             order: 12;
+        }
+    }
+    #catMn, #otMn{
+        display: flex;
+         flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    }
+    #hismn{
+        display: grid;
+        width: 85vw;
+        height: 65vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30vh 30vh 30vh;
+        grid-template-areas: 
+        "pic1 text1"
+        "pic2 text2"
+        "pic3 text3"
+        ;
+        .hisDivImg{
+            height: 10px;
+        }
+        .hisDiv{
+            display: flex;
+        }
+        #hisDiv1{
+            grid-area: pic1;
+        }
+        #hisSec1{
+            grid-area: text1;
+        }
+        #hisDiv2{
+            grid-area: pic2;
+        }
+        #hisSec2{
+            grid-area: text2;
+        }
+        #hisDiv3{
+            grid-area: pic3;
+        }
+        #hisSec3{
+            grid-area: text3;
         }
     }
     footer{
@@ -311,5 +356,5 @@ footer{
         text-shadow: var(--text_shadow);
     }
     }
-
+}
 }
