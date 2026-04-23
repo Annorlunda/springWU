@@ -79,11 +79,28 @@ main{
 }
 #hisMn{
         display: grid;
-        
         .hisSec{
             background-color: var(--main_blue);
             border-radius: var(--box_border_radius);
             box-shadow: var(--box_shadow);
+        }
+        #hisDiv1{
+            grid-area: pic1;
+        }
+        #hisSec1{
+            grid-area: text1;
+        }
+        #hisDiv2{
+            grid-area: pic2;
+        }
+        #hisSec2{
+            grid-area: text2;
+        }
+        #hisDiv3{
+            grid-area: pic3;
+        }
+        #hisSec3{
+            grid-area: text3;
         }
     }
 
@@ -149,6 +166,9 @@ footer{
     }
     main{
         height: 125vh;
+        #catSec8, #catSec9, #catSec10, #catSec11, #catDiv1, #catDiv2, #catDiv3, #catDiv4, #hisDivImg2, #hisDivImg5{
+            display: none;
+        }
     }
     #catMn, #otMn{
         display: flex;
@@ -159,9 +179,6 @@ footer{
         .catSecImg{
             height: 25vh;
         }
-        #catSec8, #catSec9, #catSec10, #catSec11, #catDiv1, #catDiv2, #catDiv3, #catDiv4{
-            display: none;
-        }
         #catDiv7{
             order: -1;
         }
@@ -171,7 +188,6 @@ footer{
         }
     }
     #hisMn{
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 35vh 35vh 1fr 35vh ;
         grid-template-areas: 
@@ -181,7 +197,6 @@ footer{
         "pic3 text3";
         justify-items: center;
         align-items: center;
-        /* row-gap: 2px; */
         .hisDivImg{
             height: 30vh;
             margin-left: 10px;
@@ -207,24 +222,6 @@ footer{
             width: 47vw;
             height: 30vh;
             justify-self: start;
-        }
-        #hisDiv1{
-            grid-area: pic1;
-        }
-        #hisSec1{
-            grid-area: text1;
-        }
-        #hisDiv2{
-            grid-area: pic2;
-        }
-        #hisSec2{
-            grid-area: text2;
-        }
-        #hisDiv3{
-            grid-area: pic3;
-        }
-        #hisSec3{
-            grid-area: text3;
         }
     }
     footer{
@@ -286,44 +283,50 @@ footer{
     }
     #catMn, #otMn{
         display: flex;
-         flex-wrap: wrap;
+        flex-wrap: wrap;
         align-content: space-evenly;
         justify-content: space-evenly;
     }
-    #hismn{
-        display: grid;
-        width: 85vw;
-        height: 65vh;
+    #hisMn{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 30vh 30vh 30vh;
+        grid-template-rows: repeat(1fr, 3);
         grid-template-areas: 
         "pic1 text1"
-        "pic2 text2"
-        "pic3 text3"
-        ;
+        "text2 pic2"
+        "pic3 text3";
+        justify-items: center;
+        align-items: center;
         .hisDivImg{
-            height: 10px;
+            height: 45vh;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: black;
+            padding: 3vh;
+            border-radius: var(--box_border_radius);
+            box-shadow: var(--box_shadow);
         }
         .hisDiv{
+            background-color: transparent;
+            box-shadow: none;
+        }
+        .hisSec{
             display: flex;
+            flex-direction: column;
+            align-content: center;
         }
-        #hisDiv1{
-            grid-area: pic1;
-        }
-        #hisSec1{
-            grid-area: text1;
-        }
-        #hisDiv2{
-            grid-area: pic2;
+        #hisSec1, #hisSec3{
+            justify-self: start;
         }
         #hisSec2{
-            grid-area: text2;
+            justify-self: end;
         }
-        #hisDiv3{
-            grid-area: pic3;
+        h2, p{
+            margin-left: 8px;
+            margin-right: 8px;
         }
-        #hisSec3{
-            grid-area: text3;
+        #hisSec1, #hisSec2, #hisSec3{
+            height: 27vh;
+            width: 35vw;
         }
     }
     footer{
