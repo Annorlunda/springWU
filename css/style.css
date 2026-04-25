@@ -170,6 +170,31 @@ footer{
             display: none;
         }
     }
+    #inMn{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        .inDivImg{
+            height: 30vh;
+            background-color: black;
+            padding: 10px;
+            border-radius: var(--box_border_radius);
+            box-shadow: var(--box_shadow);
+        }
+        .inSec{
+            background-color: var(--main_blue);
+            border-radius: var(--box_border_radius);
+            box-shadow: var(--box_shadow);
+            width: 95vw;
+        }
+        .inDiv2{
+            display: flex;
+            justify-content: space-between;
+            width: 95vw;
+        }
+    }
     #catMn, #otMn{
         display: flex;
         flex-direction: row;
