@@ -252,6 +252,9 @@ footer{
             margin-left: 5px;
             margin-right: 5px;
         }
+        #hisSec2P2{
+            display: none;
+        }
         #hisSec1{
             width: 42vw;
             height: 30vh;
@@ -336,31 +339,46 @@ footer{
         justify-items: center;
         align-items: center;
         .inDivImg{
-            height: 30vh;
+            height: 35vh;
         }
         #inDiv2{
             display: none;
         }
         #inSec1{
             grid-area: text1;
+            height: 35vh;
+            width: 45vw;
+            justify-self: start;
         }
         #inDiv1{
             grid-area: pic1;
         }
         #inSec2{
             grid-area: text2;
+            height: 30vh;
+            width: 80vw;
         }
         #inSec3{
             grid-area: text3;
+            height: 35vh;
+            width: 45vw;
+            justify-self: end;
         }
         #inSec4{
             grid-area: text4;
+            height: 35vh;
+            width: 45vw;
+            justify-self: start;
         }
         #inDiv3{
             grid-area: pic2;
+            justify-self: start;
+            margin-left: 10px;
         }
         #inDiv4{
             grid-area: pic3;
+            justify-self: end;
+            margin-right: 10px;
         }
     }
     #catMn, #otMn{
@@ -406,8 +424,11 @@ footer{
             margin-left: 8px;
             margin-right: 8px;
         }
+        #hisSec2P1{
+            display: none;
+        }
         #hisSec1, #hisSec2, #hisSec3{
-            height: 27vh;
+            height: 33vh;
             width: 35vw;
         }
     }
