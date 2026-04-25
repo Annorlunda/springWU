@@ -166,9 +166,6 @@ footer{
     }
     main{
         height: 125vh;
-        #catSec8, #catSec9, #catSec10, #catSec11, #catDiv1, #catDiv2, #catDiv3, #catDiv4, #hisDivImg2, #hisDivImg5{
-            display: none;
-        }
     }
     #inMn{
         display: flex;
@@ -203,6 +200,9 @@ footer{
         align-content:space-around;
         .catSecImg{
             height: 25vh;
+        }
+        #catSec8, #catSec9, #catSec10, #catSec11, #catDiv1, #catDiv2, #catDiv3, #catDiv4, #hisDivImg2, #hisDivImg5{
+            display: none;
         }
         #catDiv7{
             order: -1;
