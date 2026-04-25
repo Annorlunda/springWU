@@ -77,6 +77,24 @@ main{
     }
     
 }
+#inMn{
+    h2, p{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    .inDivImg{
+        background-color: black;
+        padding: 10px;
+        border-radius: var(--box_border_radius);
+        box-shadow: var(--box_shadow);
+    }
+    .inSec{
+            background-color: var(--main_blue);
+            border-radius: var(--box_border_radius);
+            box-shadow: var(--box_shadow);
+    }
+
+}
 #hisMn{
         display: grid;
         .hisSec{
@@ -173,18 +191,14 @@ footer{
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        #inDiv3, #inDiv4, #inSec3, #inSec4{
+            display: none;
+        }
         .inDivImg{
-            height: 30vh;
-            background-color: black;
-            padding: 10px;
-            border-radius: var(--box_border_radius);
-            box-shadow: var(--box_shadow);
+            height: 25vh;
         }
         .inSec{
-            background-color: var(--main_blue);
-            border-radius: var(--box_border_radius);
-            box-shadow: var(--box_shadow);
-            width: 95vw;
+            width: 93vw;
         }
         .inDiv2{
             display: flex;
@@ -201,7 +215,7 @@ footer{
         .catSecImg{
             height: 25vh;
         }
-        #catSec8, #catSec9, #catSec10, #catSec11, #catDiv1, #catDiv2, #catDiv3, #catDiv4, #hisDivImg2, #hisDivImg5{
+        #catSec8, #catSec9, #catSec10, #catSec11, #catDiv1, #catDiv2, #catDiv3, #catDiv4{
             display: none;
         }
         #catDiv7{
@@ -222,6 +236,9 @@ footer{
         "pic3 text3";
         justify-items: center;
         align-items: center;
+        #hisDivImg2, #hisDivImg5{
+            display: none;
+        }
         .hisDivImg{
             height: 30vh;
             margin-left: 10px;
@@ -304,6 +321,46 @@ footer{
         }
         #catSec5{
             order: 12;
+        }
+    }
+    #inMn{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 43vh 1fr 43vh 43vh;
+        grid-template-areas: 
+        "pic1 text1 text1"
+        "text2 text2 text2"
+        "text3 text3 pic2"
+        "pic3 text4 text4";
+        /* gap: 5px; */
+        justify-items: center;
+        align-items: center;
+        .inDivImg{
+            height: 30vh;
+        }
+        #inDiv2{
+            display: none;
+        }
+        #inSec1{
+            grid-area: text1;
+        }
+        #inDiv1{
+            grid-area: pic1;
+        }
+        #inSec2{
+            grid-area: text2;
+        }
+        #inSec3{
+            grid-area: text3;
+        }
+        #inSec4{
+            grid-area: text4;
+        }
+        #inDiv3{
+            grid-area: pic2;
+        }
+        #inDiv4{
+            grid-area: pic3;
         }
     }
     #catMn, #otMn{
