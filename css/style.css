@@ -2,8 +2,8 @@
     --my_blue:#1e235c;
     --main_blue:#9caeff;
     --box_shadow_blue: #002699;
-    --box_shadow: 5px 5px 8px var(--box_shadow_blue)/*#0030cc*/; /*ha skugga på texten i heqader också*/
-    --main_white: #d6e0ff/*#e5ebff*/;
+    --box_shadow: 5px 5px 8px var(--box_shadow_blue);
+    --main_white: #d6e0ff;
     --logo_border_radius: 4px;
     --text_shadow:7px 5px 10px var(--main_white);
     --box_border_radius: 10px;
@@ -11,11 +11,10 @@
 body{
     margin: 0px;
     background-color: transparent;
-    /*background-color: green;*/
 }
 
 #container{
-    background-color:var(--main_white) /*#ccd5ff*/;
+    background-color:var(--main_white);
     height: 200vh;
     display:grid;
     grid-template-columns: 15vw 1fr;
@@ -60,7 +59,6 @@ nav{
     border-style: none;
 }
 main{
-    /*background-color: #9caeff/*#8099ff#e5eaff*/
     grid-area: mn;
     box-shadow: var(--box_shadow);
     background-color: var(--main_white);
@@ -127,9 +125,6 @@ footer{
     grid-area: ft;
 }
 }
-/*p{ Kolla om vi vill ha den färgen som textfärg
-    color:#fffffc;
-}*/
 
 /*Font för header + fancy saker*/
 .dm-serif-display-regular{
@@ -150,7 +145,6 @@ footer{
 }
 #hdBLogo, #navClose{
     height: 8vh;
-    
 }
 #hdNav{
     height: 8.5vh;
@@ -444,8 +438,6 @@ footer{
     #footText{
         flex-grow: 0.1;
     }
-    
-    
     h4{
         margin: 0.5em;
         font-size: 2em;
