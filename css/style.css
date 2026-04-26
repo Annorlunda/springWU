@@ -1,3 +1,4 @@
+/*Variabler*/
 :root{
     --my_blue:#1e235c;
     --main_blue:#9caeff;
@@ -12,7 +13,6 @@ body{
     margin: 0px;
     background-color: transparent;
 }
-
 #container{
     background-color:var(--main_white);
     height: 200vh;
